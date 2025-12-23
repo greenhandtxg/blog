@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Labubu to Myself | Katherine's Blog</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #d4a574;
+            --text: #3a3a3a;
+            --light: #666;
+            --bg: #faf8f5;
+        }
+
+        body {
+            font: 400 16px/1.85 'Raleway', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* ===== NAV ===== */
+        .navbar {
+            background: rgba(255, 255, 255, .95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, .08);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            color: var(--light);
+            font-size: 0.95rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item i {
+            color: var(--primary);
+        }
+
+        .logo {
+            font: 600 1.8rem 'Dancing Script', cursive;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .nav-link.active {
+            color: var(--primary);
+        }
+
+        /* ===== ARTICLE ===== */
+        .article-header {
+            padding: 4rem 2rem 3rem;
+            background: linear-gradient(135deg, rgba(212, 165, 116, 0.05), rgba(232, 196, 160, 0.05));
+            text-align: center;
+            animation: fadeIn 1s ease;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .article-content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 1rem 1rem 1rem;
+            line-height: 1em;
+        }
+
+        .article-content h2 {
+            font: 700 1.8rem 'Playfair Display', serif;
+            margin: 0.5rem 0 1rem;
+            color: var(--primary);
+        }
+
+        .article-content p {
+            margin: 1.4rem 0;
+            color: #444;
+            line-height: 1.7;
+        }
+
+        figure {
+            margin: 2rem 0;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .12);
+        }
+
+        figure:hover {
+            transform: scale(1.05);
+        }
+
+        figcaption {
+            font-size: 0.85rem;
+            color: var(--light);
+            margin-top: 0.8rem;
+        }
+
+        blockquote {
+            margin: 3rem 0;
+            padding: 1.5rem 2rem;
+            background: #f3ede7;
+            border-left: 4px solid var(--primary);
+            font-style: italic;
+            color: #555;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .references {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .references h2 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .references p {
+            font-size: 0.95rem;
+            margin: 0.8rem 0;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.9rem;
+            color: var(--light);
+            background: #222;
+            color: white;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        ul {
+            padding-left: 50px;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            /* Add bottom margin for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================= 页面头部：文章基本信息 ================= -->
+    <header class="article-header">
+        <h1 class="article-title">Not Just Buying Things: How Consumption Quietly Shapes My Everyday Life</h1>
+        <div class="article-meta" style="margin-top: 30px;">
+            <span class="meta-item">
+                <i class="far fa-calendar"></i>
+                December, 2025
+            </span>
+            <span class="meta-item">
+                <i class="far fa-clock"></i>
+                15 min read
+            </span>
+            <span class="meta-item">
+                <i class="far fa-user"></i>
+                Katherine
+            </span>
+        </div>
+    </header>
+
+
+    <article class="article-content">
+
+        <p>
+            A year ago, if someone questioned me about what consumption is, I would have given a simple answer and said
+            that it is purchasing things. Shopping, clothing, phone data, Netflix, takeaway food, and basic items of
+            daily use. I also felt that I was a very average consumer. I was not en-gaged in anything extreme. I wasn't
+            constantly shopping. I was just living.
+
+        </p>
+
+        <p>
+            Nonetheless, my scholarly studies about consumption have slowly changed my everyday life. It made me realize
+            that consumption is not only a financial activity but also a social activity, a cultural habit, and a
+            routine, as well as an affective activity. It organizes my time, form my at-tention, influence my relations,
+            and even create my understanding of myself. This blog will look back on my routine activities: the use of
+            phones and food habits, online shopping, socializ-ing activities, and show how these activities lead me to
+            the position of consumer in contempo-rary society.
+        </p>
+
+        <h2>My Day, Framed by Consumption</h2>
+
+        <p>
+            I do not wake up thinking about anything, but I start my morning with a reflex: to grab my phone. Before my
+            feet hit the floor, I'm already consuming: notifications, messages, headlines, reels. It feels passive,
+            habitual, not like "real" consumption because I am not spending money. However, the discussion of digital
+            platforms by Jarrett (2006) allowed for the reinterpretation of this ritual (pp. 107-108). I am consuming
+            the attention, time, and data, and I am also generating as a compliant user in a system of more or less
+            covert surveillance, much like eBay users who feel that they have autonomy but they are actually being
+            guided by community norms and mechanisms of surveillance (Jarrett, 2006, p. 116). The platforms are
+            empowering; I select what to press, but they are craftily manipulative in directing my behaviour. This is a
+            choreographed freedom. This perception caused my first hour of the day to be different; it was no longer an
+            hour of neutral downtime but an organised induction into a cycle of engagement where I am the audience and
+            product.
+
+        <figure>
+            <img src="assets/Figure1.jpg" alt="Labubu figurine">
+            <figcaption>
+                Figure 1 Before my day begins, I am already consuming (Angle, 2025)
+            </figcaption>
+        </figure>
+
+        </p>
+
+        <h2>The Moral Weight of a Meal </h2>
+
+        <p>
+            Should my phone habits display structural shaping, my food relationship displays a closer arena of identity.
+            I would take a meal because I would be hungry, because it tastes good, and because it is affordable. My
+            relationship with food is much more than sustenance, a place to negotiate identity and to negotiate
+            morality, on a day-to-day basis. De Solier (2013) explains that food consumption is instilled in moralities
+            of consumption where decisions indicate class, ethics, and selfhood (p. 108). This puts my own supermarket
+            dilemma not only in the terms of thrift and quality, but as an enactment of cultural and moral location.
+        </p>
+
+        <p>
+            I am in the supermarket, standing and deciding on two loaves of bread. One is a white loaf, which is cheap
+            and mass-produced. The other one is a costly sourdough, which is promoted as artisanal and local. The choice
+            feels heavy. In this decision, I am being a sort of “partial omni-vore” taste with my middlebrow preferences
+            of authentic foods, and the lowbrow preferences for industrialized foods (De Solier, 2013, pp. 120-121).
+            Omnivore is the moral self which con-sumes ethically as opposed to food snobs who reflect elitism in their
+            consumption (De Solier, 2013, pp. 115, 143). Such selective openness is a sign of cosmopolitan identity, a
+            respect to-wards diversity and what is good in both quality and morality (De Solier, 2013, pp. 115, 121).
+        </p>
+
+        <p>
+            Therefore, my anxiety related to food is not frivolous, but it shows a more serious cultural code where
+            consumption is a realm of everyday practice for self-moral development (De Solier, 2013, p. 109). By such
+            decisions, I am not merely feeding myself, but building myself a self who will aspire to be educated and
+            moral, and to work my way through what de Solier (2013) refers to as the immorality of distinction (p. 143).
+        </p>
+
+        <figure>
+            <img src="assets/Figure2.jpg" alt="Labubu figurine">
+            <figcaption>
+                Figure 2 A simple choice that feels heavier than it should (Niloo138, 2014)
+            </figcaption>
+        </figure>
+
+        <p>
+            Moreover, I have never just considered shopping as an errand, whether online or otherwise, where the
+            distinction between browsing and purchasing is very thin. Now I realise that these online environments are
+            not merely selling products to me; they just organize my emotional re-ality. What starts as a quest to find
+            something particular, a book, a charger, a pair of shoes, easi-ly develops into something different
+            altogether. I am browsing through customised suggestions, lured by time-sensitive deals and the assurance of
+            an enhanced version of my daily existence. During such times, shopping is not about what I need but how I
+            feel bored, stressed, restless, or need a small, immediate satisfaction.
+        </p>
+
+
+        <p>
+            Such an emotional habit, instead of a rational one, has become more evident to me by the con-tribution of
+            such scholars as Roach et al. (2019), who suggest that consumer societies define well-being and satisfaction
+            depends on consumption (pp. 12, 21). The deeper I consider, the eas-ier I see my own needs become distorted
+            into what I think would be necessary. Would I use this other reusable water bottle, or am I purchasing an
+            illusion of the organised, sustainable, put-together version of me? The digitalized markets are made to take
+            advantage of such ambiguity, making consumption a coping strategy, as well as a recreational activity. Not
+            only am I pur-chasing a product, but I am purchasing a moment of distraction, a hit of dopamine, or a moment
+            of control.
+        </p>
+
+
+        <h2>Spaces of Fleeting Belonging</h2>
+
+        <p>
+            This self-reflection on the issue of choice was offset by the reading of Khorana (2019), who made me focus
+            on the locations where consumption occurs (p.3). Their analysis of Indian gro-cery stores as locations of
+            conviviality on transit appealed to me strongly, in my unfamiliar set-ting. My personal version was located
+            in a small and standalone cafe close to the university.
+        </p>
+
+
+        <p>It is not just a coffee shop. The baristas are aware of my regular order. I know other regulars, the student
+            with his huge textbooks, the writer who sits and writes. We do not talk much; we just nod at one another.
+            The structure of the cafe, as provided by Khorana (2019), allowed me to view this cafe as not only a vendor
+            but a social node where interactions are enacted and facili-tated (p. 2). My entry into this temporary
+            society is my buying of a coffee. It is a small, bought object, a moment of rest and silent appreciation
+            spread out over my week. This consumption is not the purchase of an object, but rather an entry-level into a
+            sense of place and belonging that I was not aware I was in need of.
+
+        <figure>
+            <img src="assets/Figure3.jpg" alt="Labubu figurine" style="width: 45%; height: auto;">
+            <figcaption>
+                Figure 3 Buying a coffee is also buying a moment of belonging (Society, 2020)
+            </figcaption>
+        </figure>
+        </p>
+
+
+        <h2>Rituals That Bind Us</h2>
+
+        <p>
+            My greatest intellectual change was the realization that consumption was the bond of my social existence. My
+            habit of taking out and watching a movie with my housemates on a weekly basis was sheer entertainment. At
+            this point, I understand it in the light of Collins (2005, as cited in Boström, 2021, p. 2) and his idea of
+            interaction ritual chains. These rites of shared consumption cause emotional energy and collective
+            effervescence (Boström, 2021, p. 2).<br>
+            I would use his model on our Friday evening (Boström, 2021, p. 2):
+        <ul style="padding-left: 50px;">
+            <li><strong>Group Assembly: </strong> The three of us are sitting in our living room.</li>
+            <li><strong>Barriers to Outsiders: </strong> Our secret customs.</li>
+            <li><strong>Mutual Focus of Attention: </strong> The meal that was eaten, the movie that was watched.</li>
+            <li><strong>Shared Mood: </strong> Relaxation, camaraderie, release.</li>
+        </ul>
+
+
+        <figure>
+            <img src="assets/Figure4.jpg" alt="Labubu figurine" width="100px">
+            <figcaption>
+                Figure 4 Shared consumption is often how we stay close (Freepik, 2024)
+            </figcaption>
+        </figure>
+        </p>
+
+        <p>
+            The laughter, the arguing out what to have, the mutual fun, this is Durkheim's collective effer-vescence, as
+            summarized by Boström (2021, p. 2). The revelation is that this beautiful bonding ritual is driven by
+            consumption. This introduces a lot of tension that he brings to your attention: it is through the same
+            rituals that hold my most intimate relationships together that are also in-separably connected to the cycles
+            of spending.
+        </p>
+
+
+        <h2>The Cultural Capital in My Tastes</h2>
+
+        <p>
+            In addition to these material rituals, the readings had me accounting my non-material consump-tion: my
+            taste. Noble and Ang (2018) who use Bourdieu's cultural capital to analyze ethnicity and cultural
+            consumption taught me about the concept of cultural capital as knowledge and preferences that indicate
+            belonging and status (p. 298). They use regional scales as an analytical tool to compare ethnic groups in
+            Australia (e.g., Australian, US, Asian) (Noble & Ang, 2018, pp. 299-300).
+            It was interesting to analyze my personal cultural diet. The history of my streaming is com-prised mostly of
+            Chinese series. I have music that is nearly completely anglophone. I am shame-fully unaware of comparable
+            Australian visual artists or directors, as the survey conducted by Noble and Ang (2018) anticipates (pp.
+            302-303). This audit revealed to me that my consump-tion adds up to a certain kind of cultural capital,
+            which is globalised, Chinese. This is not an apolitical favoritism; it puts me in a place. It makes it easy
+            to converse with certain peers but not to be able to talk to others. That is why now I view my entertainment
+            as not only leisure but as a constant and unconscious investment in a specific culture that forms my social
+            horizons.
+        </p>
+
+        <h2>The Algorithmic Mirror</h2>
+
+        <p>
+            This has brought together all these threads of moral anxiety, social ritual, and cultural capital into the
+            digital world, where I am most obviously a consumer. My feeds in social media are a hall of mirrors, which
+            is a constructed form of me that has been constructed by my history of clicks. For example, recently, I was
+            going through a tough time so my feed kept showing me sad poetry. Jarrett’s (2006) platform
+            discipline/community mechanism can be used here as a more general platform logic (pp. 107-108), which means
+            that this gives a reassuring feeling of be-longingness and lures me into a behavioural trap (Jarrett, 2006,
+            p. 107).
+
+        <figure>
+            <img src="assets/Figure5.jpg" alt="Labubu figurine" style="width: 30%; height: auto;">
+            <figcaption>
+                Figure 5 Instagram summarising my identity based on past engagement (Wisniach, 2023)
+            </figcaption>
+        </figure>
+        </p>
+
+        <p>
+            The algorithm, which has learnt my inclinations, insists on offering more of the same. It not on-ly sells me
+            products but also sells me back a pre-existing identity. “Since you loved that one, you will love this one.”
+            My feeling of independent choice is a falsehood channelled through a slender passage created by information
+            of my own. I am buying a self that is already determined to be what I am by the system, confining my tastes
+            and making me less adventurous. This is consistent with the concepts of "filter bubble” which was proposed
+            by Pariser (2011, p. 1). The filter bubble is a concept suggesting that the search engine and the social
+            media, and their rec-ommendation and personalisation algorithms, are the very cause of the polarisation of
+            the socie-ty and ideology that many nations are going through today: we are no longer getting a balanced and
+            healthy information diet (Pariser, 2011, pp. 20, 23) but only see the information that seems appealing to
+            our already existing interests and that reaffirm our current worldview (Pariser, 2011, pp. 7, 10).
+        </p>
+
+        <h2>Final Verdict: Reflective Living in the System</h2>
+
+        <p>
+            So, the academic study of consumption has demonstrated the role of consumption in my every-day life is a
+            totalising and structural one. It is the tool with the help of which my time is struc-tured, my social
+            relationships are established and sustained, my identity is shaped, and my be-longing is bargained. The
+            instruments offered by the academic study helped me see the reality. It provided me with specific ideas to
+            substitute the emotions of indeterminacy and ambiguity with knowledge. I did not get out of the consumer
+            society. I remain the scrolling, choosing, buy-ing, and sharing person. I have now become a reflective
+            consumer. This awareness does not give me complete freedom, and yet it gives me a better sense of clarity.
+            It enables me to ap-proach the system not as an innocent user, but with my eyes open, to go through its
+            currents with a more difficult-acquired, more questioning kind of agency.
+        </p>
+
+
+        <section class="references">
+            <h2>References</h2>
+            <p>Adobe Stock. (2025). Smartphone mockup on bedside table, blank white screen, app showcase template, angle
+                perspective [Photograph]. <a
+                    href="https://stock.adobe.com/images/smartphone-mockup-on-bedside-table-blank-white-screen-app-showcase-template-angle-perspective/877182284"
+                    target="_blank">https://stock.adobe.com/images/smartphone-mockup-on-bedside-table-blank-white-screen-app-showcase-template-angle-perspective/877182284</a>
+            </p>
+            <p>Boström, M. (2021). Social relations and everyday consumption rituals: Barriers or prerequisites for
+                sustainability transformation? <i>Frontiers in Sociology</i>, 6, Article 723464. <a
+                    href="https://doi.org/10.3389/fsoc.2021.723464"
+                    target="_blank">https://doi.org/10.3389/fsoc.2021.723464</a></p>
+            <p>De Solier, I. (2013). <i>Food and the self: Consumption, production and material culture</i>. Bloomsbury
+                Academic.</p>
+            <p>Freepik. (2024). Beer and pizza in the bar football match tv background [AI-generated image]. <a
+                    href="https://www.freepik.com/premium-ai-image/beer-pizza-bar-football-match-tv-background_298581940.htm"
+                    target="_blank">https://www.freepik.com/premium-ai-image/beer-pizza-bar-football-match-tv-background_298581940.htm</a>
+            </p>
+            <p>Jarrett, K. (2006). The perfect community: Disciplining the eBay user. In K. Hillis, M. Petit, & N. S.
+                Epley (Eds.), <i>Everyday eBay: Culture, collecting, and desire</i> (pp. 107–121). Routledge.</p>
+            <p>Khorana, S. (2019). <i>The tastes and politics of inter-cultural food in Australia</i>. Bloomsbury
+                Publishing USA.</p>
+            <p>Niloo138. (2014, October 3). Bread in grocery store [Photograph]. Dreamstime. <a
+                    href="https://www.dreamstime.com/editorial-image-bread-grocery-store-different-types-shelves-image45969525"
+                    target="_blank">https://www.dreamstime.com/editorial-image-bread-grocery-store-different-types-shelves-image45969525</a>
+            </p>
+            <p>Noble, G., & Ang, I. (2018). Ethnicity and cultural consumption in Australia. <i>Continuum: Journal of
+                    Media & Cultural Studies</i>, 32(3), 296–307. <a
+                    href="https://doi.org/10.1080/10304312.2018.1453464"
+                    target="_blank">https://doi.org/10.1080/10304312.2018.1453464</a></p>
+            <p>Pariser, E. (2011). <i>The filter bubble: What the internet is hiding from you</i> [Lecture slides]. LSE
+                Public Lecture. <a
+                    href="https://www.lse.ac.uk/assets/richmedia/channels/publicLecturesAndEvents/slides/20110620_1830_theFilterBubble_sl.pdf"
+                    target="_blank">https://www.lse.ac.uk/assets/richmedia/channels/publicLecturesAndEvents/slides/20110620_1830_theFilterBubble_sl.pdf</a>
+            </p>
+            <p>Roach, B., Goodwin, N., & Nelson, J. (2019). Consumption and the consumer society (GDAE Teaching Module).
+                Global Development and Environment Institute, Tufts University. <a
+                    href="https://www.bu.edu/eci/files/2019/10/Consumption_and_Consumer_Society.pdf"
+                    target="_blank">https://www.bu.edu/eci/files/2019/10/Consumption_and_Consumer_Society.pdf</a></p>
+            <p>Society Coffee House. (2020, May 24). Our process. <a href="https://societycoffeehouse.id/our-process/"
+                    target="_blank">https://societycoffeehouse.id/our-process/</a></p>
+            <p>Wisniach, B. (2023, August 25). How and why to create a user preference center. Customer Engagement Blog.
+                <a href="https://onesignal.com/blog/a-guide-to-user-preference-centers/"
+                    target="_blank">https://onesignal.com/blog/a-guide-to-user-preference-centers/</a>
+            </p>
+        </section>
+
+
+    </article>
+
+    <footer>
+        © 2025 Katherine · All rights reserved · <a href="#">Privacy Policy</a>
+    </footer>
+
+</body>
+
+</html>
